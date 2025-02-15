@@ -6,11 +6,12 @@ services:
       context: ..
       dockerfile: containers/backend.Dockerfile
     ports:
-      - "5000:80"
+      - "5011:5011"
     volumes:
       - ./wwwroot:/app/wwwroot
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: "http://0.0.0.0:5011"
 
   frontend:
     build:

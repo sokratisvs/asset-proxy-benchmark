@@ -33,12 +33,17 @@ If you need to install or update Node.js, download it from [here](https://nodejs
 
 If you prefer to run the frontend without Docker:
 
-### 1. Install Dependencies
+### 1. Navigate to the Frontend Folder
+```sh
+cd client
+```
+
+### 2. Install Dependencies
 ```sh
 npm install
 ```
 
-### 2. Start the Development Server
+### 3. Start the Development Server
 ```sh
 npm run dev
 ```
@@ -54,7 +59,7 @@ Ensure that you have .NET 8 installed. You can download it from [here](https://d
 
 ### 2. Navigate to the Backend Folder
 ```sh
-cd backend
+cd SvgDemoApi
 ```
 
 ### 3. Restore Dependencies
@@ -72,7 +77,7 @@ dotnet build
 dotnet run
 ```
 
-The backend will be running on the configured port (check your `.env` or default to `http://localhost:3000`).
+The backend will be running on the configured port (check your `.env` or default to `http://localhost:5011`).
 
 ## Backend Docker Setup
 
@@ -89,7 +94,7 @@ docker run -p 80:80 asset-benchmark-backend
 ```
 
 ## Notes
-- Ensure port `5173` (frontend) and the backend port (e.g., `3000` or `80` in Docker) are available on your machine.
+- Ensure port `5173` (frontend) and the backend port (e.g., `5011` or `80` in Docker) are available on your machine.
 - If you encounter issues, verify that Docker is running and that your project dependencies are installed correctly.
 
 ---

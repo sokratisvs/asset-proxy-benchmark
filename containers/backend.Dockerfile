@@ -24,7 +24,7 @@ WORKDIR /app
 COPY --from=build /app .
 
 # Expose the port that the application will run on
-EXPOSE 80
+EXPOSE 5011
 
 # Set the entry point for the application
 ENTRYPOINT ["dotnet", "SvgDemoApi.dll"]
