@@ -85,12 +85,12 @@ If you want to run the backend inside a Docker container:
 
 ### 1. Build the Docker Image
 ```sh
-docker build -t asset-benchmark-backend ./backend
+docker build -t asset-benchmark-backend -f containers/backend.Dockerfile .
 ```
 
 ### 2. Run the Backend Container
 ```sh
-docker run -p 80:80 asset-benchmark-backend
+docker run -p 5011:5011 asset-benchmark-backend
 ```
 
 ## Notes
